@@ -13,3 +13,23 @@
       System.out.println(i); //输入i的值
       innnnnn.close(); // 最后记得 对象名.close 来关闭Scanner输入
       ```
+
+## 2. 函数(方法)的使用
+- Java里的函数被称为方法，方法的使用和C语言有很大不同。一般我们会把所需要的函数定义在main方法前，包裹在外层Class里。  
+  - 比如我现在有一个类，名为App，我想在main方法里调用前面我定义的方法function1。那我需要先new一个App的对象出来，也就是 `App testxx = new App();`，然后`testxx.function1`，这样我才能正常调用function1。在C里因为没有对象的概念，所以可以直接function1。
+    - ```Java
+      public class App {
+          int function1() {
+              int a = 1;
+              int b = 2;
+              int c = a + b;
+              return c;
+          }
+          public static void main(String[] args) {
+              App testxx = new App();
+              int i = testxx.function1();
+              System.out.println(i);
+          }
+      }
+      ```
+      `输出：3`
