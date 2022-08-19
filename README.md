@@ -33,3 +33,10 @@
       }
       ```
       `输出：3`
+
+## 3. Arraylist的使用
+- Arraylist是一个动态的数组，数组的长度可长可短，但是在最初的时候我们要定义存放的数组的数据的类。  
+  - 比如 `ArrayList<Integer> anyname = new ArrayList<Integer>();`  
+这个就表示定义一个叫做anyname的对象，这个对象是一个动态数组，这个数组只能存放Integer(也就是int)类的数据。  
+`ArrayList<String> anyname = new ArrayList<String>();` 就表示存放字符串的数组。
+    - 但是Arraylist还有个nb的用法，就是<>里可以存放自己定义的类，但是比较复杂我自己都不太说的明白，就不说了(((
